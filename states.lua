@@ -39,13 +39,10 @@ states.set = function( path )
 	for k = 1 , #states.functionList do
 		love[ states.functionList[k] ] = nil;
 	end
-	dofile( path:gsub( "." , function( l )
-		if l == "." then
-			return "/";
-		else
-			return l;
-		end
-	end ) .. ".lua" );
+	dofile( path .. ".lua" );
+	if love.load then
+		love.load();
+	end
 end
 
 return states;
