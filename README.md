@@ -80,3 +80,7 @@ function love.keypressed( key, unicode )
 end
 ```
 download the example [here.](https://github.com/haakonbaa/Lua-States-Library/tree/master/example)
+## Licence
+MIT.
+Read the licence [here](https://github.com/haakonbaa/Lua-States-Library/blob/master/LICENSE)
+
